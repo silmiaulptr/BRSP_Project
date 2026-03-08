@@ -1,61 +1,70 @@
-# Analisis Patogenesis PCOS Melalui Ekspresi Gen Diferensial (DEGs) pada Sel Granulosa 
+# 🧬 Portofolio Bioinformatika: Analisis Transkriptomik & Differentially Expressed Genes (DEGs)
 
-### Latar Belakang
-*Polycystic Ovary Syndrome* (PCOS) adalah gangguan endokrin dan metabolik yang menjadi penyebab utama infertilitas anovulatorik pada wanita usia reproduksi. Salah satu karakteristik utama PCOS adalah terhentinya perkembangan folikel ovarium (*follicular arrest*). Secara patofisiologis, sel granulosa sel somatik penyokong folikel memainkan peran krusial dalam patogenesis penyakit ini. Analisis komparatif ini bertujuan untuk mengevaluasi profil *Differentially Expressed Genes* (DEGs) pada sel granulosa pasien PCOS dibandingkan dengan wanita sehat (Kontrol), guna mengidentifikasi gen-gen penggerak (*driver genes*) yang merusak fungsi reproduksi.
+[![OmicsLite BRSP](https://img.shields.io/badge/Program-BRSP_OmicsLite-purple.svg)](#)
+[![R Programming](https://img.shields.io/badge/Language-R-blue.svg)](#)
+[![Status](https://img.shields.io/badge/Status-Completed-success.svg)](#)
 
----
-
-### Metodologi Analisis
-
-![Flowchart Metodologi](Flowchart_Metodologi_Granulosa.png)
-*Gambar 1. Alur kerja analisis transkriptomik dari persiapan data hingga interpretasi hasil.*
-
-Seperti yang diilustrasikan pada **Gambar 1**, tahapan analisis dirancang secara sistematis. Data matriks ekspresi diekstraksi dari *Gene Expression Omnibus* (GEO) publik dengan aksesi **GSE155489**. Analisis komparatif antara kelompok Kontrol (Normal) dan PCOS dieksekusi menggunakan perangkat lunak statistik berbasis web, GEO2R. Kontrol kualitas yang ketat diterapkan menggunakan metode koreksi *False Discovery Rate* (FDR) dengan ambang batas *Adjusted p-value* < 0.05 untuk menyaring gen yang valid. Output data DEG yang lolos seleksi kemudian diekstraksi untuk divisualisasikan.
+## Tentang Repositori Ini
+Repositori ini berisi kumpulan tugas, mini-proyek, dan proyek akhir (*Capstone Project*) yang saya kerjakan selama mengikuti **Bioinformatics Research Starter Program (BRSP)** dari OmicsLite. Program pelatihan 5 minggu ini menggunakan pendekatan *Project-Based Learning* (PBL) untuk mempelajari analisis data *transcriptomics* (khususnya *Differentially Expressed Gene* / DEG) secara runtut dan aplikatif. Dalam repositori ini, saya mendemonstrasikan alur riset bioinformatika secara utuh, mulai dari literasi ilmiah, eksplorasi basis data Gene Expression Omnibus (GEO), pemrosesan data dengan R, hingga interpretasi biologis (*Enrichment Analysis*).
 
 ---
 
-### Hasil dan Interpretasi Biologis
+## 🏆 *Capstone Project* (Proyek Akhir)
+Sebagai penugasan akhir program ini, saya melakukan analisis komparatif ekspresi gen secara mandiri. 
 
-#### 1. Evaluasi Kualitas Data (Boxplot)
-Sebelum mengidentifikasi gen-gen spesifik, sangat penting untuk memastikan data terbebas dari bias teknis (*batch effect*).
-
-![Boxplot Normalisasi](Boxplot_Granulosa.jpg)
-
-*Gambar 2. Distribusi nilai median ekspresi antar-sampel yang telah dinormalisasi.*
-
-Berdasarkan visualisasi *Boxplot* pada **Gambar 2**, nilai median intensitas ekspresi (Log2) pada seluruh sampel berada pada garis horizontal yang sejajar. Kesejajaran ekuilibrium ini mengonfirmasi bahwa data hitungan ekspresi dari repositori GEO telah ternormalisasi dengan sangat baik. Variasi yang dianalisis dipastikan murni akibat kondisi patologis PCOS, bukan akibat kesalahan instrumen.
-
-#### 2. Pemisahan Identitas Molekuler (UMAP)
-Untuk memvalidasi apakah penyakit ini secara fundamental merombak profil genetik, dilakukan analisis proyeksi dimensi reduksi spasial.
-
-![UMAP Plot](UMAP_Granulosa.jpg)
-
-*Gambar 3. UMAP Plot menunjukkan pemisahan koordinat spasial yang tegas berdasarkan kondisi penyakit.*
-
-Berdasarkan hasil visualisasi pada **Gambar 3**, *UMAP plot* menampilkan klasterisasi spasial yang sangat tajam dan tanpa *overlap* antara kelompok sampel Kontrol dan PCOS. Jarak yang merentang jauh antar kedua klaster ini membuktikan bahwa sel granulosa penderita PCOS telah kehilangan identitas molekuler normalnya akibat paparan penyakit.
-
-#### 3. Asimetri Transkripsional Global (Volcano Plot)
-Setelah validasi jarak molekuler dipastikan, distribusi keseluruhan gen yang mengalami perubahan aktivitas divisualisasikan.
-
-![Volcano Plot](Volcano_Granulosa.jpg)
-
-*Gambar 4. Volcano Plot menunjukkan distribusi DEGs yang asimetris.*
-
-Analisis diferensial pada **Gambar 4 (Volcano Plot)** mengungkap fenomena asimetri ekstrem. Lanskap grafik sangat didominasi oleh kepadatan titik pada area *LogFC* positif, yang merepresentasikan gen-gen *up-regulation* secara signifikan. Dominasi tak lazim ini mengindikasikan terjadinya **hiperaktivitas transkripsional** di dalam sel granulosa PCOS. Hal ini merupakan respons kompensasi seluler terhadap stres kronis di lingkungan ovarium, yang memaksa sel terus-menerus memproduksi mRNA secara berlebihan.
-
-#### 4. Karakterisasi Molekuler Penggerak Utama (Top DEGs)
-Untuk memahami kerusakan spesifik yang terjadi, data difokuskan pada gen-gen penyandi fungsional dengan nilai signifikansi tertinggi.
-
-![Tabel Top DEGs](Tabel_DEGs_Granulosa.png)
-
-*Gambar 5. Daftar gen teratas (Top DEGs) beserta metrik signifikansinya.*
-
-Merujuk pada metrik di **Gambar 5**, disfungsi sel granulosa pada PCOS terbukti didalangi oleh malfungsi beberapa jalur mekanisme:
-1. Gen **MMD** (*Monocyte to macrophage differentiation-associated*) menempati urutan signifikansi teratas secara absolut (*padj* = 1.11E-69, Log2FC = 2.264), diikuti oleh peningkatan gen **NFKBIA** (Log2FC = 1.643). Sinergi keduanya mengonfirmasi aktivasi makrofag folikuler agresif yang menciptakan badai sitokin di dalam ovarium yang merusak oosit.
-2. Lonjakan ekspresi drastis terjadi pada gen **CLDN11** (Log2FC = 1.86) yang menyandikan protein *tight junction*. *Over expression* ini mengubah *Blood Follicle Barrier* menjadi kaku dan fibrotik, memblokir lalu lintas nutrisi dan membuat oosit kelaparan.
-3. *Down regulation* pada gen **KCNK1** (Log2FC = -3.699) merusak fungsi kanal kalium, menghancurkan stabilitas "kelistrikan" seluler, dan membuat folikel menjadi kebal terhadap sinyal ovulasi dari tubuh.
+* **Topik Riset:** Analisis Transkriptomik MPXV (Mpox Virus) Clade IIb (Mock vs MPXV).
+* **Dataset yang Digunakan:** `GSE219036` (Data TPM RNA-seq sampel kulit).
+* **Hasil & Laporan Utama:** Silakan baca detail analisis, visualisasi, dan interpretasi biologisnya di dokumen **[Analisis Transkriptomik MPXV CladIIb](Analisis_Transkriptomik_MPXV_CladIIb.md)**.
+* **Skrip R:** [`Pipeline_MPCV_Mock_CladIIb.R`](Pipeline_MPCV_Mock_CladIIb.R)
+* **Dataset Mentah:** [`Dataset_GSE219036_TPM_for_GEO_upload_skin.txt.gz`](Dataset_GSE219036_TPM_for_GEO_upload_skin.txt.gz)
 
 ---
 
-### Kesimpulan
-*Pipeline* komputasi transkriptomik yang diterapkan pada dataset GSE155489 secara komprehensif membuktikan bahwa PCOS memicu pergeseran molekuler yang masif, asimetris, dan destruktif pada sel granulosa. Disregulasi konstelasi gen kunci yakni hiperaktivasi **MMD** dan **NFKBIA** (inflamasi fokal), **CLDN11** (fibrosis barier folikel), serta represi **KCNK1** (kegagalan ion seluler) mentransformasi lingkungan ovarium sehat menjadi lingkungan patologis yang memicu berhentinya pematangan sel telur. 
+## Rekam Jejak Pembelajaran (Minggu 1 - 3)
+Selain proyek akhir, repositori ini juga mendokumentasikan proses belajar saya secara bertahap selama program berlangsung:
+
+### 🔹 Minggu 1: Konseptual dan Literasi Ilmiah
+Mempelajari dasar *transcriptomics* dan berlatih melakukan telaah literatur ilmiah.
+* 📄 **[Review Jurnal: Efek Glabridin pada Biofilm Staphylococcus aureus](Review-Jurnal-Efek-Glabridin-pada-Biofilm-Staphylococcus-aureus.md)**
+
+### 🔹 Minggu 2: Pengenalan Data & Analisis Berbasis Web (GEO2R)
+[cite_start]Eksplorasi data microarray dari NCBI GEO (Dataset `GSE137684` - Sel Granulosa PCOS) dan melakukan analisis DEG tahap awal.
+* 📄 **[Analisis Patogenesis PCOS DEGs pada Sel Granulosa](Analisis%20Patogenesis%20PCOS%20DEGs%20pada%20Sel%20Granulosa.md)**
+
+### 🔹 Minggu 3: *Workflow* DEG Analysis menggunakan R
+Menerapkan analisis reproduktif (*reproducible analysis*) menggunakan bahasa pemrograman R untuk membandingkan pasien *Normoandrogenic* (NA) dan *Hyperandrogenic* (HA) PCOS.
+* 📄 **Laporan Analisis:** **[Analisis Transkriptomik Normoandrogenic dan Hyperandrogenic PCOS](Analisis%20Transkiptomik%20Normoandrogenic%20dan%20Hyperandrogenic%20PCOS.md)**
+* **Skrip Analisis:** [`Pipeline_PCOS_HA_NA.R`](Pipeline_PCOS_HA_NA.R)
+* **Hasil Output:** [`Hasil DEGs_GSE137684_HA_vs_NA.csv`](Hasil%20DEGs_GSE137684_HA_vs_NA.csv)
+* **Dataset Lokal:** [`Dataset_GSE137684_series_matrix.txt.gz`](Dataset_GSE137684_series_matrix.txt.gz)
+
+---
+
+## Tools & Packages yang Digunakan
+
+Proyek ini menggunakan bahasa pemrograman **R / RStudio** dengan memanfaatkan berbagai *packages* dari ekosistem CRAN dan Bioconductor:
+
+* **Pengambilan & Manajemen Data:**
+  * `GEOquery`: Untuk mengunduh dataset microarray (GSE137684) beserta tabel anotasinya secara langsung dari *database* NCBI GEO.
+  * `dplyr`: Digunakan untuk manipulasi dan transformasi struktur data (data wrangling).
+  * *Base R* (`read.table`): Digunakan untuk proses ekstraksi dan pembacaan *raw expression matrix* dari file lokal berekstensi `.txt.gz`.
+
+* **Analisis Statistik & *Differential Expression* (DEG):**
+  * `limma`: *Package* utama yang digunakan untuk pemodelan linear eksperimen (*design matrix*, *contrasts*), perhitungan *fold-change*, dan penapisan signifikansi statistik (p-value / FDR).
+
+* **Anotasi Gen & *Enrichment Analysis*:**
+  * `org.Hs.eg.db`: Basis data anotasi genom manusia yang digunakan untuk pemetaan ID (*mapping*), seperti mengonversi *Ensembl ID* atau *Probe ID* menjadi *Gene Symbol* dan *Entrez ID*.
+  * `clusterProfiler`: Digunakan untuk mengeksekusi analisis pengayaan fungsi biologis (Gene Ontology - Biological Process) dan jalur metabolisme (KEGG Pathways).
+  * `enrichplot`: Digunakan secara spesifik untuk memvisualisasikan hasil dari analisis *clusterProfiler* ke dalam bentuk *Dotplot*.
+
+* **Visualisasi Data Eksekusi Tinggi:**
+  * `ggplot2`: Digunakan secara luas untuk membuat visualisasi utama seperti *Volcano Plot*, *PCA Plot*, *Boxplot*, dan *Density Plot*.
+  * `pheatmap`: Untuk membangun *Heatmap* hierarkis dari Top 50 DEGs, lengkap dengan anotasi warna pengelompokan sampel pasien.
+  * `umap` / `prcomp` (PCA): Digunakan pada tahap analisis komponen utama (reduksi dimensi) untuk memvalidasi pemisahan pola varians antar grup sampel.
+  * `ggrepel` (implisit pada `geom_label_repel`): Berperan dalam anotasi teks *Volcano Plot* agar label spesifik gen (Top DEGs) otomatis terhindar dari tumpang tindih (*overlapping*).
+
+## 💡 Cara Mereproduksi Analisis
+Jika Anda ingin mengeksekusi skrip R di komputer Anda:
+1. *Clone* repositori ini menggunakan Git: 
+   ```bash
+   git clone [https://github.com/silmiaulptr/BRSP_Project.git](https://github.com/silmiaulptr/BRSP_Project.git)
