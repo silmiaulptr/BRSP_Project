@@ -118,7 +118,7 @@ Kemudian hasil juga menunjukkan adanya Supresi Reproduksi (Negative Regulation o
 
 #### 5. Validasi Silang Fungsional: Analisis Sinyal Ekstrem vs. Sistemik (g:Profiler)
 Untuk memvalidasi pergeseran global dari ribuan gen sebelumnya, analisis pengayaan fungsional sekunder dilakukan menggunakan basis data g:Profiler dengan dua pendekatan *threshold* (ambang batas) untuk melihat efek penyakit dari dua sudut pandang berbeda: **Top 40 DEGs** (sinyal sangat ekstrem) dan **Top 200 DEGs** (sinyal sistemik jaringan).
-![Gene Ontology Top 40 DEGs](gProfiler%20%40%20%gen_HA_NA.png)
+![Gene Ontology Top 40 DEGs](gProfiler_40_gen_HA_NA.png)
 
 *Gambar 6. Analisis pengayaan mengungkap pemetaaan gejala fisik.*
 
@@ -126,7 +126,7 @@ Untuk memvalidasi pergeseran global dari ribuan gen sebelumnya, analisis pengaya
 Pada **Gambar 6** ketika analisis difokuskan murni pada 40 gen dengan perubahan ekspresi paling drastis (20 gen *Up* dan 20 gen *Down*), algoritma mendeteksi sinyal patologis yang sangat mengerucut pada ciri fisik pasien:
 * **Hiperaktivasi Jaringan Kulit & Keratinisasi:** Analisis *Gene Ontology* mendeteksi pengayaan yang sangat tajam pada jalur Diferensiasi Keratinosit (*Keratinocyte differentiation*, padj = 1.88E-4) dan pembentukan selubung kulit luar (*Cornified envelope*). Sinyal ekstrem ini adalah fondasi molekuler mutlak dari keluhan utama pasien HA PCOS, di mana paparan androgen berlebih memicu penebalan epidermis dan pertumbuhan rambut folikel yang tidak wajar (*hirsutisme*).
 
-![Gene Ontology Top 200 DEGs](gProfiler%20%200%20%gen_HA_NA.png)
+![Gene Ontology Top 200 DEGs](gProfiler_200_gen_HA_NA.png)
 
 *Gambar 6. Analisis pengayaan mengungkap pemetaaan gejala fisik.*
 
@@ -150,7 +150,7 @@ Kombinasi antara proses biologis makro (GO) dan pemetaan persinyalan mikro (KEGG
 
 **1. Badai Inflamasi dan Miskomunikasi Parakrin (Cytokine-Cytokine Receptor Interaction)**
 
-![Peta KEGG Sitokin](KEGG%20%Cytokine-cytokine%20%receptor%20%interaction.png)
+![Peta KEGG Sitokin](KEGG_Cytokine-cytokine_receptor_interaction.png)
 *Gambar 7. Pemetaan interaksi protein pada Cytokine-cytokine receptor interaction pathway. Area yang di-highlight menunjukkan disregulasi spesifik pada keluarga IL-6, TNF, dan TGF-beta.*
 
 Temuan aktivasi sistem imun pada GO tervalidasi secara visual melalui peta interaksi reseptor sitokin. Analisis menyoroti disregulasi kunci pada keluarga gen pro-inflamasi dan pengatur pertumbuhan folikel, di antaranya:
@@ -161,7 +161,7 @@ Temuan aktivasi sistem imun pada GO tervalidasi secara visual melalui peta inter
 
 **2. Kekacauan Sinyal Endokrin (GnRH Secretion Pathway)**
 
-![Peta KEGG GnRH](KEGG%20%GnRH%20%secretion.png)
+![Peta KEGG GnRH](KEGG_GnRH_secretion.png)
 *Gambar 8. Pemetaan interaksi pada GnRH Secretion Pathway. Anomali molekuler terdeteksi secara jelas pada infrastruktur Saluran Kalsium (L-type, T-type, Cav3.2).*
 
 Selain inflamasi, ovarium penderita HA PCOS memiliki karakteristik disfungsi endokrin dan ketidakseimbangan hormon yang parah. Visualisasi pada jalur sekresi GnRH (*Gonadotropin-Releasing Hormone*) menunjukkan anomali spesifik pada infrastruktur **Saluran Kalsium (Calcium Channels)**.
