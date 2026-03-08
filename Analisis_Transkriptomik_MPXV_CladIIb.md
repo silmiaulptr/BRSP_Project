@@ -40,7 +40,7 @@ Analisis GO menggunakan *clusterProfiler* mengindikasikan adanya pergeseran masi
 
 ![GO Pathways - clusterProfiler](GO_MPXV_Mock_CladIIb.png)
 
-Validasi ortogonal menggunakan **g:Profiler** (*UP* dan *DOWN*) mempertegas dualisme patogenesis. Hasil *UP* didominasi oleh perombakan nukleus, sementara hasil *DOWN* menunjukkan penekanan absolut pada diferensiasi keratinosit—mekanisme klasik yang dieksploitasi oleh Poxvirus untuk merusak jaringan inang (Miller et al., 2022).
+Validasi ortogonal menggunakan **g:Profiler** (*UP* dan *DOWN*) mempertegas dualisme patogenesis. Hasil *UP* didominasi oleh perombakan nukleus, sementara hasil *DOWN* menunjukkan penekanan absolut pada diferensiasi keratinosit mekanisme klasik yang dieksploitasi oleh Poxvirus untuk merusak jaringan inang (Miller et al., 2022).
 
 ![gProfiler DOWN Results](gProfiler_MPXV_DOWN.png)
 
@@ -49,7 +49,7 @@ Validasi ortogonal menggunakan **g:Profiler** (*UP* dan *DOWN*) mempertegas dual
 ### 3.4. Runtuhnya Benteng Epidermis (Supresi Cornified Envelope)
 Pemetaan spasial melalui *KEGG Mapper* menyoroti jalur **Cornified Envelope Formation (hsa04382)** sebagai target destruksi utama. Terdapat supresi mutlak (100% *down-regulated*) pada 87 gen penyusun epitel. 
 
-![KEGG Pathway: Cornified Envelope](KEGG_Cornified%20%Envelope_MPXV.png)
+![KEGG Pathway: Cornified Envelope](KEGG_Cornified_Envelope_MPXV.png)
 
 Supresi pada kompleks desmosom (*DSG1, DSC1, JUP, PKP*) secara langsung memicu *akantolisis* (hilangnya daya rekat kulit), yang menjadi dasar patogenesis vesikel Mpox (Sato & Sato, 2021). Kegagalan maturasi sel akibat terhentinya produksi *Involucrin* dan *Filaggrin* menyebabkan barier fisik kulit lisis secara total.
 
