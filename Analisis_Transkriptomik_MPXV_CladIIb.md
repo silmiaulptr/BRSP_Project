@@ -1,4 +1,4 @@
-### Profiling Transkriptomik Respons Inang pada Infeksi Mpox Clade IIb: Wawasan Molekuler untuk Desain Vaksin In Silico
+### Profiling Transkriptomik Respons Inang pada Infeksi Mpox Clade IIb
 
 ***
 
