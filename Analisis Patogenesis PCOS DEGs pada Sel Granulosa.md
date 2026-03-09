@@ -3,11 +3,6 @@
 ### Latar Belakang
 *Polycystic Ovary Syndrome* (PCOS) adalah gangguan endokrin dan metabolik yang menjadi penyebab utama infertilitas anovulatorik pada wanita usia reproduksi (Escobar-Morreale, 2018). Salah satu karakteristik utama PCOS adalah terhentinya perkembangan folikel ovarium (*follicular arrest*). Secara patofisiologis, sel granulosa, sel somatik penyokong folikel, memainkan peran krusial dalam patogenesis penyakit ini (Welt et al., 2005). Analisis komparatif ini bertujuan untuk mengevaluasi profil *Differentially Expressed Genes* (DEGs) pada sel granulosa pasien PCOS dibandingkan dengan wanita sehat (Kontrol), guna mengidentifikasi gen penggerak (*driver genes*) yang merusak fungsi reproduksi. 
 
-
-
-[Image of Polycystic Ovary Syndrome pathology]
-
-
 ### Metodologi Analisis
 
 ![Flowchart Metodologi](Flowchart_Metodologi_Granulosa.png)
