@@ -73,35 +73,50 @@ Kontrol kualitas melalui Boxplot dan Density Plot membuktikan bahwa transformasi
 ![Boxplot MPXV vs Mock](Boxplot_MPXV_Mock_CladIIb.png)
 
 ![Density Plot MPXV vs Mock](DensityPlot_MPXV_Mock_CladIIb.png)
+*Gambar 1. Boxplot dan Density Plot.*
 
 Lebih lanjut, hasil Principal Component Analysis memperlihatkan klasterisasi yang terpisah sempurna pada sumbu utama PC1. Hal ini membuktikan secara matematis bahwa intervensi virus Mpox merupakan aktor tunggal yang merombak arsitektur genetik sel inang, mengalahkan faktor gangguan lingkungan lainnya (Watanabe et al., 2023).
 
 ![PCA Plot MPXV vs Mock](PCAPlot_MPXV_Mock_CladIIb.png)
+
+*Gambar 2. PCA Plot.*
 
 ### 3.2. Lanskap Badai Transkripsional
 Sifat infeksi Mpox yang akut terekam secara visual pada Volcano Plot. Ribuan gen terdorong ke arah ekstrem kanan dan kiri, menciptakan fenomena badai transkripsional (Li et al., 2023). Virus tidak hanya mengubah segelintir gen, melainkan membajak ribuan fungsi normal sel inang secara bersamaan.
 
 ![Volcano Plot MPXV vs Mock](VolcanoPlot_MPXV_Mock_CladIIb.png)
 
+*Gambar 3. Volcano Plot.*
+
 Analisis Heatmap pada 50 gen teratas memperlihatkan blok warna yang memisah tajam dan konsisten. Kondisi ini mengonfirmasi bahwa sel sel manusia merespons invasi virus Mpox dengan cara yang sangat seragam, membuktikan tingginya keandalan data untuk mencari target terapi.
 
 ![Heatmap Top 50 DEGs](Heatmap_MPXV_Mock_CladIIb.png)
+
+*Gambar 4. Heatmap.*
 
 ### 3.3. Profil Pengayaan Fungsional Global
 Pemetaan awal menggunakan clusterProfiler menunjukkan bahwa infeksi Mpox secara langsung menghantam integritas struktural jaringan epidermis sekaligus membunyikan alarm sistem imun pertahanan seluler.
 
 ![GO Pathways clusterProfiler](GO_MPXV_Mock_CladIIb.png)
 
+*Gambar 5. Top 10 KEGG dan GO.*
+
 Validasi ortogonal g:Profiler mengonfirmasi dualisme patogenesis ini secara lebih tajam. Kelompok gen yang ditekan oleh virus berafiliasi erat dengan kegagalan pertumbuhan kulit normal, sedangkan kelompok gen yang dipaksa aktif oleh sel inang berhubungan dengan perombakan struktur inti sel dan modifikasi DNA (Miller et al., 2022).
 
 ![gProfiler DOWN Results](gProfiler_MPXV_DOWN.png)
 
+*Gambar 6. GO gProfiler gen DOWN.*
+
 ![gProfiler UP Results](gProfiler_MPXV_UP.png)
+
+*Gambar 7. GO gProfiler gen UP.*
 
 ### 3.4. Runtuhnya Benteng Kulit dan Patogenesis Lesi
 Peta KEGG Mapper pada jalur Cornified Envelope Formation mengungkap strategi utama virus Mpox dalam menghancurkan jaringan inang. Seluruh 87 gen penyusun epitel kulit dimatikan secara total. Secara biologis, hal ini memicu efek berantai yang mematikan bagi jaringan kulit.
 
 ![KEGG Pathway Cornified Envelope](KEGG_Cornified_Envelope_MPXV.png)
+
+*Gambar 8. KEGG Pathway Cornified Envelope.*
 
 Pertama, virus menekan gen desmosom DSG1, DSC1, JUP, dan PKP. Desmosom adalah lem perekat antar sel. Tanpa protein ini, sel sel kulit akan terlepas satu sama lain (akantolisis) yang menyebabkan rongga berisi cairan, atau yang secara klinis kita kenal sebagai lepuh atau vesikel (Sato & Sato, 2021). Kedua, virus menghentikan produksi tulang punggung sel seperti keratin serta protein pelindung terluar Involucrin dan Filaggrin. Kegagalan perakitan fisik ini membuat jaringan kulit kehilangan pertahanannya secara komplit.
 
@@ -110,9 +125,13 @@ Sebagai respons kepanikan atas kehancuran kulit tersebut, sel inang memicu mekan
 
 ![KEGG Pathway ATP Chromatin Remodeling](KEGG_ATP_Chromatin_MPXV.png)
 
+*Gambar 9. KEGG Pathway  ATP Chromatine.*
+
 Secara epigenetik, sel inang merespons invasi dengan memproduksi varian histon H2AZ secara masif. Histon ini bertugas melonggarkan gulungan DNA yang rapat di dalam nukleus agar enzim pembaca gen bisa masuk dengan cepat. Tujuannya adalah untuk mencetak ribuan protein darurat antivirus dan sitokin secara kilat (Wang et al., 2025; Kulej et al., 2015).
 
 ![KEGG Pathway NET Formation](KEGG_NET_Formation_MPXV.png)
+
+ *Gambar 10. KEGG Pathway  NET Formation.*
 
 Namun, tingginya produksi histon inti dan munculnya hiper sitrulinasi pada Histon H3 citH3 membawa konsekuensi fatal. Kehadiran citH3 memicu proses NETosis, yaitu kondisi di mana sel darah putih neutrofil memutuskan untuk bunuh diri dengan cara memecahkan diri dan memuntahkan jaring DNA nya ke luar sel untuk menjerat partikel virus (Jiao et al., 2020). Ledakan sel imun inilah yang memicu badai peradangan hebat dan memperparah kerusakan atau nekrosis jaringan pada area lesi Mpox (Wu et al., 2025).
 
