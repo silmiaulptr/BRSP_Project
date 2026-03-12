@@ -11,12 +11,12 @@
 ## Tentang Repositori Ini
 Repositori ini berisi kumpulan tugas, mini-proyek, dan proyek akhir (*Capstone Project*) yang diselesaikan selama program **Bioinformatics Research Starter Program (BRSP)** oleh OmicsLite. Program pelatihan intensif ini menggunakan pendekatan *Project-Based Learning* (PBL) untuk mengeksplorasi analisis data *transcriptomics* (khususnya *Differentially Expressed Genes* / DEGs) secara komprehensif. 
 
-Di dalam repositori ini, saya mendemonstrasikan alur riset bioinformatika secara utuh untuk meneliti respons genetik seluler terhadap infeksi virus dan kelainan metabolik. Tahapan mencakup literasi ilmiah, akuisisi basis data dari Gene Expression Omnibus (GEO), pemrosesan data statistik dengan R, hingga interpretasi fungsional biologis (*Enrichment Analysis*).
+Di dalam repositori ini, saya mendemonstrasikan alur riset bioinformatika untuk meneliti respons genetik seluler terhadap infeksi virus dan kelainan metabolik. Tahapan mencakup literasi ilmiah, akuisisi basis data dari Gene Expression Omnibus (GEO), pemrosesan data statistik dengan R, hingga interpretasi fungsional biologis (*Enrichment Analysis*).
 
 ---
 
 ## 🌟 *Capstone Project* (Proyek Akhir)
-Sebagai penugasan puncak, saya merancang dan mengeksekusi analisis komparatif ekspresi gen secara mandiri untuk membedah respons sel inang terhadap infeksi virus guna mendukung desain kandidat antigen vaksin *in-silico*.
+Saya merancang dan mengeksekusi analisis komparatif ekspresi gen secara mandiri untuk membedah respons sel inang terhadap infeksi virus guna mendukung desain kandidat antigen vaksin *in-silico*.
 
 * **Topik Riset:** Analisis Profil Transkriptomik *Host-Response* pada Infeksi Mpox Clade IIb (Mock vs MPXV).
 * **Dataset:** `GSE219036` (Data TPM RNA-seq sel kulit manusia).
@@ -32,7 +32,7 @@ Sebagai penugasan puncak, saya merancang dan mengeksekusi analisis komparatif ek
 Selain proyek akhir, repositori ini mendokumentasikan proses pendalaman *tools* dan konsep secara bertahap:
 
 ### Minggu 1: Konseptual dan Literasi Ilmiah
-Membangun fondasi analisis *transcriptomics* dan berlatih melakukan telaah kritis terhadap literatur mikrobiologi.
+Membangun fondasi analisis *transcriptomics*.
 * 📄 **[Review Jurnal: Efek Glabridin pada Biofilm Staphylococcus aureus](Review-Jurnal-Efek-Glabridin-pada-Biofilm-Staphylococcus-aureus.md)**
 
 ### Minggu 2: Pengenalan Data & Analisis Berbasis Web (GEO2R)
